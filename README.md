@@ -2,7 +2,7 @@
 
 ## 📋 Proje Hakkında
 
-Bu repository, **Harfus** Türkçe Wordle oyunu için hazırlanmış gizlilik politikası sayfasını içermektedir. Sayfa, Google Play Store ve App Store mağaza gerekliliklerini karşılamak üzere tasarlanmıştır.
+Bu repository, **Harfus** Türkçe Wordle oyunu için hazırlanmış gizlilik politikası sayfasını içermektedir. Sayfa, Google Play Store mağaza gerekliliklerini karşılamak üzere tasarlanmıştır.
 
 ## 🌐 Canlı Site
 
