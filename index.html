@@ -20,7 +20,6 @@
                 <span class="brand-text">Harfus</span>
             </div>
             <div class="nav-links">
-                <a href="#" class="nav-link">Ana Sayfa</a>
                 <a href="#" class="nav-link active">Gizlilik</a>
             </div>
         </div>
@@ -35,7 +34,7 @@
                 </h1>
                 <p class="hero-subtitle">Verileriniz güvende, gizliliğiniz korunuyor</p>
                 <div class="hero-badge">
-                    <span class="badge-text">Son güncelleme: 25 Aralık 2024</span>
+                    <span class="badge-text">Son güncelleme: <span id="lastUpdated"></span></span>
                 </div>
             </div>
         </div>
@@ -245,12 +244,29 @@
                 <span class="footer-icon">🎮</span>
                 <span>Harfus</span>
             </div>
-            <p>© 2024 Harfus - Türkçe Wordle Oyunu</p>
+            <p>© 2025 Harfus - Türkçe Wordle Oyunu</p>
             <p>Şeffaflık ve güven için tasarlandı.</p>
         </div>
     </footer>
 
     <script>
+        // Dinamik tarih güncelleme
+        function updateLastModified() {
+            const now = new Date();
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            };
+            const turkishDate = now.toLocaleDateString('tr-TR', options);
+            document.getElementById('lastUpdated').textContent = turkishDate;
+        }
+        
+        // Sayfa yüklendiğinde tarihi güncelle
+        document.addEventListener('DOMContentLoaded', updateLastModified);
+
         // Smooth scroll animation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
