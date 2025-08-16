@@ -5,236 +5,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harfus - Gizlilik Politikası</title>
     <meta name="description" content="Harfus Türkçe Wordle oyunu gizlilik politikası">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #003F39 0%, #006B5F 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #003F39 0%, #006B5F 100%);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            font-weight: 800;
-            margin-bottom: 10px;
-            letter-spacing: -1px;
-        }
-        
-        .header .subtitle {
-            font-size: 1.1em;
-            opacity: 0.9;
-            font-weight: 300;
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        .last-updated {
-            background: #f8f9fa;
-            border-left: 4px solid #003F39;
-            padding: 15px 20px;
-            margin-bottom: 30px;
-            border-radius: 0 8px 8px 0;
-            font-weight: 600;
-            color: #003F39;
-        }
-        
-        h2 {
-            color: #003F39;
-            font-size: 1.4em;
-            margin: 30px 0 15px 0;
-            font-weight: 700;
-            border-bottom: 2px solid #e9ecef;
-            padding-bottom: 8px;
-        }
-        
-        h2:first-of-type {
-            margin-top: 0;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            font-size: 1.05em;
-            text-align: justify;
-        }
-        
-        ul {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-            font-size: 1.05em;
-        }
-        
-        .highlight {
-            background: #e8f5e8;
-            border: 1px solid #28a745;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        .highlight h3 {
-            color: #155724;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-        
-        .contact {
-            background: #003F39;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-            border-radius: 12px;
-        }
-        
-        .contact h3 {
-            font-size: 1.3em;
-            margin-bottom: 15px;
-        }
-        
-        .contact a {
-            color: #4fc3f7;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 30px;
-            color: #666;
-            border-top: 1px solid #e9ecef;
-            margin-top: 40px;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            .header h1 {
-                font-size: 2em;
-            }
-            
-            .content {
-                padding: 25px;
-            }
-            
-            .header {
-                padding: 30px 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🎮 Harfus</h1>
-            <div class="subtitle">Türkçe Wordle Oyunu - Gizlilik Politikası</div>
-        </div>
-        
-        <div class="content">
-            <div class="last-updated">
-                📅 Son Güncelleme: 25 Aralık 2024
+    <div class="background-animation"></div>
+    
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🎮</span>
+                <span class="brand-text">Harfus</span>
             </div>
-            
-            <div class="highlight">
-                <h3>🔒 Gizliliğiniz Bizim Önceliğimiz</h3>
-                <p>Harfus, kullanıcı gizliliğini korumak için tasarlanmış, tamamen çevrimdışı çalışan bir oyundur. Kişisel verileriniz toplanmaz, saklanmaz veya paylaşılmaz.</p>
-            </div>
-            
-            <h2>1. Toplanan Bilgiler</h2>
-            <p>Harfus uygulaması:</p>
-            <ul>
-                <li>Kişisel bilgilerinizi <strong>toplamaz</strong></li>
-                <li>Hiçbir kullanıcı verisini <strong>saklamaz</strong></li>
-                <li>Üçüncü taraflarla veri <strong>paylaşmaz</strong></li>
-                <li>İnternet bağlantısı <strong>gerektirmez</strong></li>
-            </ul>
-            
-            <h2>2. Oyun Verileri</h2>
-            <p>Oyun sırasında oluşturulan tüm veriler:</p>
-            <ul>
-                <li>🏆 Oyun ilerlemesi ve skorlarınız</li>
-                <li>📊 İstatistik bilgileriniz</li>
-                <li>⚙️ Uygulama ayarlarınız</li>
-            </ul>
-            <p>Bu veriler <strong>sadece cihazınızda</strong> yerel olarak saklanır ve hiçbir sunucuya gönderilmez.</p>
-            
-            <h2>3. Kullanılan İzinler</h2>
-            <p>Harfus uygulaması minimal izinler kullanır:</p>
-            <ul>
-                <li><strong>Titreşim İzni:</strong> Oyun geri bildirimleri için (dokunsal geri bildirim)</li>
-            </ul>
-            <p>Başka hiçbir cihaz iznine ihtiyaç duymaz (kamera, mikrofon, konum, vb.).</p>
-            
-            <h2>4. Üçüncü Taraf Hizmetler</h2>
-            <p>Harfus uygulaması şunları <strong>kullanmaz:</strong></p>
-            <ul>
-                <li>❌ Analitik hizmetler</li>
-                <li>❌ Reklam ağları</li>
-                <li>❌ Sosyal medya entegrasyonları</li>
-                <li>❌ Bulut depolama hizmetleri</li>
-                <li>❌ Çökme rapor hizmetleri</li>
-            </ul>
-            
-            <h2>5. Veri Güvenliği</h2>
-            <p>Oyun verileriniz:</p>
-            <ul>
-                <li>🔐 Cihazınızın güvenli depolama alanında saklanır</li>
-                <li>🛡️ Uygulama kum havuzu (sandbox) içinde korunur</li>
-                <li>📱 Sadece Harfus uygulaması tarafından erişilebilir</li>
-            </ul>
-            
-            <h2>6. Çocukların Gizliliği</h2>
-            <p>Harfus, 13 yaş altı çocuklar da dahil olmak üzere her yaştan kullanıcı için güvenlidir. Hiçbir kişisel bilgi toplamamız nedeniyle çocukların gizliliği de korunmuş durumdadır.</p>
-            
-            <h2>7. Politika Değişiklikleri</h2>
-            <p>Bu gizlilik politikasında yapılacak değişiklikler bu sayfada yayınlanacaktır. Önemli değişiklikler uygulama güncellemeleri ile duyurulacaktır.</p>
-            
-            <div class="contact">
-                <h3>📧 İletişim</h3>
-                <p>Gizlilik politikamız hakkında sorularınız için:</p>
-                <p><a href="mailto:canbejingg@gmail.com">canbejingg@gmail.com</a></p>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Ana Sayfa</a>
+                <a href="#" class="nav-link active">Gizlilik</a>
             </div>
         </div>
-        
-        <div class="footer">
+    </nav>
+
+    <main class="main">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-icon">🔒</span>
+                    Gizlilik Politikası
+                </h1>
+                <p class="hero-subtitle">Verileriniz güvende, gizliliğiniz korunuyor</p>
+                <div class="hero-badge">
+                    <span class="badge-text">Son güncelleme: 25 Aralık 2024</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <article class="content">
+                <section class="highlight-section">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🛡️</div>
+                        <div class="highlight-content">
+                            <h3>Tam Gizlilik Garantisi</h3>
+                            <p>Harfus tamamen çevrimdışı çalışır. Hiçbir kişisel veriniz toplanmaz, saklanmaz veya paylaşılmaz.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-header">
+                        <span class="section-number">01</span>
+                        <h2>Toplanan Bilgiler</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>Harfus uygulaması gizliliğinizi korumak için tasarlanmıştır:</p>
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">❌</div>
+                                <span>Kişisel bilgi toplama</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">❌</div>
+                                <span>Veri saklama</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">❌</div>
+                                <span>Üçüncü taraf paylaşımı</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">❌</div>
+                                <span>İnternet bağlantısı</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-header">
+                        <span class="section-number">02</span>
+                        <h2>Oyun Verileri</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>Tüm oyun verileri sadece cihazınızda saklanır:</p>
+                        <div class="data-cards">
+                            <div class="data-card">
+                                <div class="data-icon">🏆</div>
+                                <h4>Oyun İlerlemesi</h4>
+                                <p>Skorlarınız ve başarılarınız</p>
+                            </div>
+                            <div class="data-card">
+                                <div class="data-icon">📊</div>
+                                <h4>İstatistikler</h4>
+                                <p>Oyun performans verileri</p>
+                            </div>
+                            <div class="data-card">
+                                <div class="data-icon">⚙️</div>
+                                <h4>Ayarlar</h4>
+                                <p>Kişisel tercihleriniz</p>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-icon">📱</div>
+                            <p><strong>100% Yerel Depolama:</strong> Verileriniz hiçbir sunucuya gönderilmez.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-header">
+                        <span class="section-number">03</span>
+                        <h2>Kullanılan İzinler</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="permission-card">
+                            <div class="permission-icon">📳</div>
+                            <div class="permission-content">
+                                <h4>Titreşim İzni</h4>
+                                <p>Sadece dokunsal geri bildirim için kullanılır</p>
+                                <span class="permission-badge">Minimal İzin</span>
+                            </div>
+                        </div>
+                        <p class="permission-note">Başka hiçbir cihaz iznine ihtiyaç duyulmaz.</p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-header">
+                        <span class="section-number">04</span>
+                        <h2>Üçüncü Taraf Hizmetler</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="no-services-grid">
+                            <div class="no-service-item">
+                                <span class="no-icon">🚫</span>
+                                <span>Analitik Hizmetler</span>
+                            </div>
+                            <div class="no-service-item">
+                                <span class="no-icon">🚫</span>
+                                <span>Reklam Ağları</span>
+                            </div>
+                            <div class="no-service-item">
+                                <span class="no-icon">🚫</span>
+                                <span>Sosyal Medya</span>
+                            </div>
+                            <div class="no-service-item">
+                                <span class="no-icon">🚫</span>
+                                <span>Bulut Depolama</span>
+                            </div>
+                            <div class="no-service-item">
+                                <span class="no-icon">🚫</span>
+                                <span>Çökme Raporları</span>
+                            </div>
+                            <div class="no-service-item">
+                                <span class="no-icon">🚫</span>
+                                <span>Takip Araçları</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-header">
+                        <span class="section-number">05</span>
+                        <h2>Veri Güvenliği</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="security-features">
+                            <div class="security-item">
+                                <div class="security-icon">🔐</div>
+                                <div>
+                                    <h4>Güvenli Depolama</h4>
+                                    <p>Cihazınızın korumalı alanında saklanır</p>
+                                </div>
+                            </div>
+                            <div class="security-item">
+                                <div class="security-icon">🛡️</div>
+                                <div>
+                                    <h4>Sandbox Koruması</h4>
+                                    <p>Uygulama izolasyonu ile güvenlik</p>
+                                </div>
+                            </div>
+                            <div class="security-item">
+                                <div class="security-icon">🔒</div>
+                                <div>
+                                    <h4>Özel Erişim</h4>
+                                    <p>Sadece Harfus tarafından erişilebilir</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-header">
+                        <span class="section-number">06</span>
+                        <h2>Çocukların Gizliliği</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="child-safety-card">
+                            <div class="child-icon">👶</div>
+                            <div class="child-content">
+                                <h4>Her Yaş İçin Güvenli</h4>
+                                <p>13 yaş altı çocuklar dahil, tüm kullanıcılar için güvenlidir. Hiçbir kişisel bilgi toplanmadığı için çocukların gizliliği de tam olarak korunur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-header">
+                        <span class="section-number">07</span>
+                        <h2>Politika Değişiklikleri</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>Bu gizlilik politikasındaki değişiklikler bu sayfada duyurulacaktır. Önemli güncellemeler uygulama içinden bildirilecektir.</p>
+                    </div>
+                </section>
+            </article>
+
+            <section class="contact-section">
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-icon">💬</div>
+                        <h3>Sorularınız mı var?</h3>
+                    </div>
+                    <p>Gizlilik politikamız hakkında merak ettikleriniz için bizimle iletişime geçin.</p>
+                    <a href="mailto:muharremtopakkaya@gmail.com" class="contact-button">
+                        <span class="button-icon">📧</span>
+                        İletişime Geç
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-icon">🎮</span>
+                <span>Harfus</span>
+            </div>
             <p>© 2024 Harfus - Türkçe Wordle Oyunu</p>
-            <p>Bu politika şeffaflık ve güven için hazırlanmıştır.</p>
+            <p>Şeffaflık ve güven için tasarlandı.</p>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        // Smooth scroll animation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'all 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
